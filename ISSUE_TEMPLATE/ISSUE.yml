@@ -1,11 +1,7 @@
 name: Crash Report
 description: Report a crash with the modpack
 title: "[Bug]: "
-labels: ["bug"]
-
-assignees:
-  - Meggle1
-  
+labels: [ bug ]
 body:
   - type: markdown
     attributes:
@@ -19,14 +15,16 @@ body:
       placeholder: ex. 1.0.2
     validations:
       required: true
-    
-  - type: textarea
-    id: what-happened
+
+  - type: markdown
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "## Issue Description"
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: When did this occur
+      placeholder: E.g. 'Preparing to Create a World'
     validations:
       required: true
     
@@ -34,7 +32,7 @@ body:
     id: logs
     attributes:
       label: crash
-      description: Please upload your crash report (ModrinthApp/profiles/Cobblemon World/crash-reports/)
+      description: Please upload a link to your crash report
       render: shell
     validations:
       required: true
