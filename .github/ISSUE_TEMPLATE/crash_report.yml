@@ -33,6 +33,5 @@ body:
     attributes:
       label: crash
       description: Please upload a link to your crash report
-      render: shell
     validations:
       required: true
