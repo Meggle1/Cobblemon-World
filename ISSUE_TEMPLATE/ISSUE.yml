@@ -1,0 +1,41 @@
+name: Crash Report
+description: Report a crash with the modpack
+title: "[Bug]: "
+labels: ["bug"]
+
+assignees:
+  - Meggle1
+  
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this report!
+        
+  - type: input
+    id: modpack-version
+    attributes:
+      label: Modpack Version
+      placeholder: ex. 1.0.2
+    validations:
+      required: true
+    
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+    
+  - type: input
+    id: logs
+    attributes:
+      label: crash
+      description: Please upload your crash report (ModrinthApp/profiles/Cobblemon World/crash-reports/)
+      render: shell
+    validations:
+      required: true
+
