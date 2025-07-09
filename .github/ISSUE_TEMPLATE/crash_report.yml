@@ -32,6 +32,6 @@ body:
     id: logs
     attributes:
       label: Crash Log(s)
-      description: Please upload a link to your crash report
+      description: Please upload a link to your crash report (E.g. mclo.gs)
     validations:
       required: true
