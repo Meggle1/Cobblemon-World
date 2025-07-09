@@ -12,7 +12,7 @@ body:
     id: modpack-version
     attributes:
       label: Modpack Version
-      placeholder: ex. 1.0.2
+      placeholder: E.g. 1.0.2-hf1
     validations:
       required: true
 
@@ -23,7 +23,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: When did this occur
+      label: When did this crash occur?
       placeholder: E.g. 'Preparing to Create a World'
     validations:
       required: true
